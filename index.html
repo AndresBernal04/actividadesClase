@@ -1,10 +1,10 @@
 <!---->
 <!-- 1. Notas: Información de apoyo para entender del código
     2. Documentación: Buena práctica de programadores para dar orden al código-->
-    <!-- Atajo para comentar y descomentar es: ctrl + } -->
+<!-- Atajo para comentar y descomentar es: ctrl + } -->
 
 
-    <!-- Maquetación básica: DEBE ESTAR EN TODAS LAS PÁGINAS
+<!-- Maquetación básica: DEBE ESTAR EN TODAS LAS PÁGINAS
         Atajos: html:5 o ! -->
 
 
@@ -30,27 +30,212 @@
         - links de javascript
         - metadatos: enfocados en SEO: posicionamiento web -->
 
-    <meta charset="UTF-8">  <!--permite caracteres especiales ñ, @, &, $, á-->
+    <meta charset="UTF-8"> <!--permite caracteres especiales ñ, @, &, $, á-->
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- viewport: a que nuestro sitio web se podrá ver en diferentes dispositivos  -->
 
-
+    <!-- metadatos -->
     <!-- DOCUMENTACIÓN: títulos y descripciones meta -->
     <meta name="author" content="Andrés Bernal">
-    <meta name="keywords" content="futbol, soccer, football"> 
-    
-
-    <title>Document</title>
+    <meta name="keywords" content="fútbol, soccer, football">
+    <meta name="description" content="página informativa sobre fútbol">
 
 
+    <!-- Link a mis estilos -->
+    <!-- href: Donde especifíco las rutas de mis estilos -->
+    <link rel="stylesheet" href="./styles/index.css">
+
+    <!-- Link de mi favicon: Logo pequeño en la pestaña del navegador -->
+    <link rel="shortcut icon" href="./assets/Logo.jpg" type="image/x-icon">
+
+    <!-- Link a mis íconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <title>Project 1</title>
 
 </head>
 
 <body>
-    <!-- BODY: Lo que quiero crear -->
+    <!-- BODY: Donde van nuestras etiquetas
+        Donde estruccuramos nuestro proyecto
+        Lo que vemos de nuestro sitio Web -->
+
+
+    <!-- Inicio encabezado de mi página -->
+    <header>
+        <!-- Dentro de las etiquetas ponemos nuestro menú, banner, carrusel o lo que queramos que sea nuestro encabezado -->
+
+
+        <!-- nav: Menú de navegación -->
+
+        <nav>
+            <!-- Siempre son listas
+            listas ordenadas: ol (order list)
+            listas desordenadas: ul (unorder list)
+        
+            Cada lista tiene su elemento
+            etiqueta: li: list item-->
+
+            <!-- <ol>
+                <li>Elemento 1: ordenadas</li>
+                <li>Elemento 2: ordenadas</li>
+                <li>Elemento 3: ordenadas</li>
+            </ol> -->
+
+            <!-- Etiqueta de separacion -->
+            <hr>
+
+
+
+
+            <!-- img: ETIQUETA PARA IMÁGENES -->
+
+            <ul>
+                <li><a href="https://www.promiedos.com.ar/">Sección 1 <a></li>
+                <li><a href="https://www.fcbarcelona.es/es/">Sección 2 </a></li>
+                <li>
+                    <a href="./index.html">
+                        <!-- src: source: fuente: La ruta de la imágen 
+                        La ruta de la imágen 
+                        alt: texto descriptivo de la imágen -> texto alternativo-->
+                        <img src="./assets/Logo.jpg" alt="Logo">
+
+
+                    </a>
+                </li>
+                <li><a href="#">Sección 3</a></li>
+                <li><a href="#">Sección 4</a></li>
+            </ul>
+
+
+        </nav>
+
+        <!-- Sección banner -->
+        <section>
+            <img src="./assets/Banner.jpg" alt="Banner">
+        </section>
+
+
+    </header>
+
+
+
+    <!-- Inicio del contenido de nuestra página -->
+    <main>
+        <!-- Sección informativa 1 -->
+
+        <!-- Etiqueta section: me divide mi sitio en temáticas generales de contenido -->
+
+        <section>
+            <!-- ETIQUETAS PARA LOS TÍTULOS: las "h" 
+            h1: título principal (SÓLO UNO)
+            h2: Títulos de nuestras secciones de contenido 
+            h3, h4, h5, h6: subtítulos
+            p: párrafos
+            lorem: texto falso -->
+
+            <h1>TÍTULO PRINCIPAL</h1>
+
+            <!-- Etiquetas iframe: nos permite consumir elementos como videos, mapas, imágenes, etc, de otros sitios web  -->
+
+            <!-- 
+
+            ETIQUETAS SEMÁNTICAS: el nombre de la etiqueta ya me indica que contenido va a haber -> seo
+
+            ETIQUETAS NO SEMÁNTICAS: puede contener cualquier cosa
+            Todo lo no semántico, es para estílos -> css
+
+            ETIQUETAS DIV (No semántico) 
+            <div>: contenedor de elementos
+            <span>: hacer modificaciones específicas  
+                  
+        -->
+
+
+
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/Sw5tqQ5Ejwk?si=VxWMasEmMT9wULpb"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            </div>
+
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt impedit quam maxime, quia excepturi
+                minus hic fuga distinctio libero repellendus placeat cum, quidem, nostrum exercitationem commodi
+                corporis consectetur magnam unde!
+                Minus recusandae quas, esse porro dignissimos beatae nemo quaerat incidunt aliquid? Fugiat velit fugit
+                repellat et nostrum, hic nulla ut minus tempore accusantium, voluptas non unde molestiae dolores
+                perspiciatis sunt.
+                Est, ad eligendi temporibus totam quasi ratione? Porro, ducimus consequuntur cum corrupti rerum nihil
+                unde beatae tempora saepe, fuga architecto, explicabo ratione commodi minima corporis quas quibusdam!
+                Ducimus, quis odit!</p>
+
+
+        </section>
+
+
+        <!-- Sección informativa 2 -->
+
+
+        <section>
+            <h2>El título de mi sección</h2>
+
+            <div>
+                <img src="./assets/Imagen.jpg" alt="Imágen Fútbol">
+                <img src="./assets/Imagen.jpg" alt="Imágen Fútbol">
+                <img src="./assets/Imagen.jpg" alt="Imágen Fútbol">
+                <img src="./assets/Imagen.jpg" alt="Imágen Fútbol">
+                <img src="./assets/Imagen.jpg" alt="Imágen Fútbol">
+                <img src="./assets/Imagen.jpg" alt="Imágen Fútbol">
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Inicio del pie de página -->
+
+    <footer>
+        <!-- División de contenido contactenos  -->
+        <div>
+            <h3>Contáctame</h3>
+            <ol>
+                <li>Teléfono: 555 555 5555</li>
+                <li>Correo: adnresbernal.afbr@gmail.com</li>
+                <li>@AndrésBernal</li>
+            </ol>
+        </div>
+
+        <!-- División de contenido de logo  -->
+        <div>
+            <img src="./assets/Logo.jpg" alt="Logo">
+        </div>
+
+        <!-- División de contenido de redes sociales  -->
+        <!-- ARTICLE: También es un contenedor de elementos que se relacionan entre sí -->
+        <article>
+            <h3>Redes Sociales</h3>
+            <div>
+                <!-- La etiqueta i: es de íconos -->
+                <a href="https://www.facebook.com/"><i class="bi bi-facebook"></i></a>
+
+                <a href="https://www.instagram.com/?hl=es-la"><i class="bi bi-instagram"></i></a>
+
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+                
+                
+            </div>
+        </article>
     
+
+    </footer>
+
+
+
+
 </body>
 
 </html>
-
