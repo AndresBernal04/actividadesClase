@@ -69,7 +69,7 @@
 
         <!-- nav: Menú de navegación -->
 
-        <nav>
+        <nav class="menu_Nav">
             <!-- Siempre son listas
             listas ordenadas: ol (order list)
             listas desordenadas: ul (unorder list)
@@ -91,7 +91,7 @@
 
             <!-- img: ETIQUETA PARA IMÁGENES -->
 
-            <ul>
+            <ul class="lista_Menu">
                 <li><a href="https://www.promiedos.com.ar/">Sección 1 <a></li>
                 <li><a href="https://www.fcbarcelona.es/es/">Sección 2 </a></li>
                 <li>
@@ -99,7 +99,7 @@
                         <!-- src: source: fuente: La ruta de la imágen 
                         La ruta de la imágen 
                         alt: texto descriptivo de la imágen -> texto alternativo-->
-                        <img src="./assets/Logo.jpg" alt="Logo">
+                        <img class="logo" src="./assets/Logo.jpg" alt="Logo">
 
 
                     </a>
@@ -112,7 +112,7 @@
         </nav>
 
         <!-- Sección banner -->
-        <section>
+        <section class="banner">
             <img src="./assets/Banner.jpg" alt="Banner">
         </section>
 
@@ -127,7 +127,7 @@
 
         <!-- Etiqueta section: me divide mi sitio en temáticas generales de contenido -->
 
-        <section>
+        <section class="seccion1">
             <!-- ETIQUETAS PARA LOS TÍTULOS: las "h" 
             h1: título principal (SÓLO UNO)
             h2: Títulos de nuestras secciones de contenido 
@@ -135,7 +135,7 @@
             p: párrafos
             lorem: texto falso -->
 
-            <h1>TÍTULO PRINCIPAL</h1>
+            <h1 class="titulo">TÍTULO PRINCIPAL</h1>
 
             <!-- Etiquetas iframe: nos permite consumir elementos como videos, mapas, imágenes, etc, de otros sitios web  -->
 
@@ -154,13 +154,13 @@
 
 
 
-            <div>
+            <div id="div_video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/Sw5tqQ5Ejwk?si=VxWMasEmMT9wULpb"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-            </div>
+            
 
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt impedit quam maxime, quia excepturi
                 minus hic fuga distinctio libero repellendus placeat cum, quidem, nostrum exercitationem commodi
@@ -172,6 +172,8 @@
                 unde beatae tempora saepe, fuga architecto, explicabo ratione commodi minima corporis quas quibusdam!
                 Ducimus, quis odit!</p>
 
+            </div>
+
 
         </section>
 
@@ -179,10 +181,10 @@
         <!-- Sección informativa 2 -->
 
 
-        <section>
-            <h2>El título de mi sección</h2>
+        <section class="seccion2">
+            <h2 class="titulo">El título de mi sección</h2>
 
-            <div>
+            <div class="contenedor_img">
                 <img src="./assets/Imagen.jpg" alt="Imágen Fútbol">
                 <img src="./assets/Imagen.jpg" alt="Imágen Fútbol">
                 <img src="./assets/Imagen.jpg" alt="Imágen Fútbol">
@@ -211,6 +213,7 @@
 
         <!-- División de contenido de logo  -->
         <div>
+            <!-- width="150px" Se usa para dar el tamaño a la imágen desde html -->
             <img src="./assets/Logo.jpg" alt="Logo">
         </div>
 
@@ -239,3 +242,5 @@
 </body>
 
 </html>
+
+
