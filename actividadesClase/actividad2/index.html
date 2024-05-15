@@ -1,0 +1,147 @@
+
+
+<!-- Vamos a seguir con la importancia del posicioanmiento SEO -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- METADATOS -->
+    <meta name="author" content="Andrés Bernal">
+    <meta name="keywords" content="practica, loros">
+    <meta name="description" content="Actividad práctica css - flexbox y grid">
+    
+    <!-- Link de los estilos de mi página -->
+    <link rel="stylesheet" href="./styles/index.css">
+    
+    <!-- Link del FAVICON -->
+    <link rel="shortcut icon" href="./assets/logo/favicon.png" type="image/x-icon">
+
+
+    <title>Práctica 2</title>
+
+</head>
+<body>
+    
+    <!-- INICIO HEADER -->
+
+    <header>
+        
+        <nav class="menu_navegacion">
+
+            <!-- LOGO -->
+
+            <!-- ETIQUETAS NO SEMÁNTICCAS: No le dan estructura u orden al código, se utilizan principalmente para dar estilos
+            EJ:
+                - div
+                - span -->
+
+            <div class="logo">
+                <a href="#">
+                    <img class="img_logo" src="./assets/logo/logo.jpg" alt="Logo">
+
+                    <p class="p_logo">Looking for <span class="span_logo"> freedom</span></p>
+                    <!-- Podría ser en ves de <p>:
+                        - a
+                        - h1 (Si no se repite después)
+                        - h2
+                        - span -->
+                </a>
+            </div>
+
+
+            <!-- LISTA: Menú de navegación-->
+            <ul class="lista_menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Proyecto</a></li>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Aliados</a></li>
+                <li><a href="#">Contáctenos</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+
+    <!-- INICIO MAIN -->
+
+    <main>
+
+        <!-- SECCIÓN DE CONTENIDO PRINCIPAL -->
+
+        <!-- section.contenedor_principal -> para escribir la etiqueta con una clase directamente -->
+        <section class="contenedor_principal">      
+            <h1>Proyecto: Tomemos Conciencia</h1>
+
+            <!-- Lorem10: para poner 10 palabras, así con cualquier número -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+            <!-- Article: contenedores para elementos que se relacionan entre sí-->
+
+            <article class="contenedor_imagenes">
+
+                <div class="imagenes img1">
+                    <img src="./assets/images/img1.png" alt="img-proyecto">
+                    <div class="parrafo_img">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure iusto totam delectus enim consequatur ea, illo id laboriosam animi, odit ex dignissimos voluptates, blanditiis itaque omnis similique minus. Quas, nihil.</p>
+                    </div>
+                </div>
+
+
+                <div class="imagenes img2">
+                    <img src="./assets/images/img2.png" alt="img-proyecto">
+                    <div class="parrafo_img">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure iusto totam delectus enim consequatur ea, illo id laboriosam animi, odit ex dignissimos voluptates, blanditiis itaque omnis similique minus. Quas, nihil.</p>
+                    </div>
+                </div>
+
+
+                <div class="imagenes img3">
+                    <img src="./assets/images/img3.png" alt="img-proyecto">
+                    <div class="parrafo_img">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure iusto totam delectus enim consequatur ea, illo id laboriosam animi, odit ex dignissimos voluptates, blanditiis itaque omnis similique minus. Quas, nihil.</p>
+                    </div>
+                </div>
+
+
+                <div class="imagenes img4">
+                    <img src="./assets/images/img4.png" alt="img-proyecto">
+                    <div class="parrafo_img">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure iusto totam delectus enim consequatur ea, illo id laboriosam animi, odit ex dignissimos voluptates, blanditiis itaque omnis similique minus. Quas, nihil.</p>
+                    </div>
+                </div>
+                
+
+                <div class="imagenes img5">
+                    <img src="./assets/images/img5.png" alt="img-proyecto">
+                    <div class="parrafo_img">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure iusto totam delectus enim consequatur ea, illo id laboriosam animi, odit ex dignissimos voluptates, blanditiis itaque omnis similique minus. Quas, nihil.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+
+        <!-- SECCIÓN DE PRÁCTICA FLEXBOS -->
+        <section class="contenedor_flex">
+            <div class="flex_hijo">Caja 1</div>
+            <div class="flex_hijo">Caja 2</div>
+            <div class="flex_hijo">Caja 3</div>
+            <div class="flex_hijo">Caja 4</div>
+            <div class="flex_hijo">Caja 5</div>
+        </section>
+    </main>
+
+
+
+    <!-- INICIO FOOTER -->
+
+    <footer>
+        <p>Prática de desarrollo creada por &copy; Andrés Bernal 2024</p>
+    </footer>
+
+</body>
+</html>
