@@ -51,10 +51,10 @@ body{
 header{
     width: 100%;
     height: 100px;
-    border: 5px solid red;
 }
 
 .menu_navegacion{
+    /* IMPORTANTE: dar dimensiones */
     background-color: var(--colorEnfasis3);
     width: 100%;
     height: 100px;
@@ -62,13 +62,18 @@ header{
     top: 0%;
     left: 0%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
 }
+
 
 
 .logo{
-    border: solid 5px blueviolet;
     height: 100%;
 }
+
+
 
 .logo a{
     height: 100%;
@@ -77,21 +82,91 @@ header{
     justify-content:center;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+    font-family: var(--textContent);
+    color: var(--colorText);
+
+    /* Grosor de la fuente */
+    font-weight: bold;
+
+    /* Cambair el tamaño de la fuente */
+    font-size: 25px;
 }
+
+
+
+.p_logo{
+    width: 150px;
+
+    /* Alineacioón del texto */
+    text-align: left;
+}
+
+
+
+.span_logo{
+    color: var(--colorEnfasis1);
+
+}
+
+
 
 .img_logo{
     height: 100%;
 }
 
 
+
 .lista_menu{
-    border: 5px solid green;
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+
+
+.lista_menu a{
+    text-decoration: none;
+    color: var(--colorText);
+    font-family: var(--textContent);
+    font-size: 20px;
+}
+
+
+
+.lista_menu a:hover{
+    color: var(--colorEnfasis1);
 }
 
 
 /* ----------------MAIN---------------- */
 
+main{
+    width: 100%;
+    padding: 100px;
+}
 
+
+
+.contenedor_principal{
+    font-family: var(--textContent);
+}
+
+
+
+.contenedor_principal h1{
+    font-family: var(--textTitle);
+    font-size: 40px;
+    color: var(--colorEnfasis3);
+}
+
+
+
+.contenedor_imagenes{
+    border: 3px solid var(--colorEnfasis3);
+    margin-top: 50px;
+    border-radius: 50px;
+}
 
 
 
@@ -100,4 +175,15 @@ header{
 
 /* ---------------FOOTER--------------- */
 
+footer{
+    border: 5px solid red;
+    height: 100px;
+    background-color: var(--colorEnfasis3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    font-family: var(--textContent);
+    color: var(--colorText);
+}
 
