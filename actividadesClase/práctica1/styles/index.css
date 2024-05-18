@@ -1,0 +1,247 @@
+
+
+/* DEFINICIÓN DE LAS VARIABLES */
+:root{
+    --tipografia: 'Verdana, Geneva, Tahoma, sans-serif';
+    --color_fondo: #00001a;
+    --color_texto: white;
+    --color_claro: #000074;
+    --color_contraste: orangered;
+}
+
+/* body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #000074;
+    color: white;
+
+    
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    background-color: var(--color_fondo);
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+
+/* -------------HEADER------------- */
+
+header{
+    width: 100%;
+    height: 60vh;
+    margin-top: 150px;
+    margin-bottom: 370px;
+}
+
+
+/* BARRA DE MENÚ */
+.menu_navegacion{
+    background-color: var(--color_claro);
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+
+.logo{
+    height: 100%;
+}
+
+
+.img_logo{
+    height: 70px;
+    width: 150px;
+    margin: 10px;
+}
+
+
+.lista_menu{
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+
+.lista_menu a{
+    text-decoration: none;
+    color: var(--color_texto);
+    font-family: var(--tipografia);
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+.lista_menu a:hover{
+    color: var(--color_contraste);
+}
+
+
+/* SECCIÓN DEL BANER */
+.baner{
+    height: 100%;
+    width: 90%;
+    margin: 100px;
+}
+
+
+.baner img{
+    
+    width: 100%;
+}
+
+
+/* --------------MAIN-------------- */
+
+main{
+    width: 100%;
+    padding: 100px;
+}
+
+
+.contenedor_principal{
+    font-family: var(--tipografia);
+}
+
+
+/* TÍTULO PRINCIPAL */
+.contenedor_principal h1{
+    font-family: var(--tipografia);
+    font-size: 50px;
+    color: var(--color_texto);
+    font-weight: bolder;
+}
+
+
+.contenedor_principal p{
+    font-family: var(--tipografia);
+    font-size: 25px;
+    color: var(--color_texto);
+    font-weight: bolder;
+}
+
+
+/* DIMENSIONES Y DIVISIÓN DEL GRID */
+.contenedor_imagenes{
+    border: 3px solid var(--color_claro);
+    margin-top: 20px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+
+.contenedor_imagenes img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.imagenes{
+    display: grid;
+    position: relative;
+}
+
+/* UBICACIÓN DE CADA IMÁGEN */
+
+.img1{
+    grid-row:1/2;
+    grid-column: 1/2;
+}
+
+
+.img2{
+    grid-row:1/2;
+    grid-column: 2/3;
+}
+
+
+.img3{
+    grid-row:1/2;
+    grid-column: 3/4;
+}
+
+
+.img4{
+    grid-row:2/3;
+    grid-column: 1/2;
+}
+
+
+.img5{
+    grid-row:2/3;
+    grid-column: 2/3;
+}
+
+
+.img6{
+    grid-row:2/3;
+    grid-column: 3/4;
+}
+
+
+.img7{
+    grid-row:3/4;
+    grid-column: 1/2;
+}
+
+
+.img8{
+    grid-row:3/4;
+    grid-column: 2/3;
+}
+
+
+.img9{
+    grid-row:3/4;
+    grid-column: 3/4;
+}
+
+/* NOMBRE DE CADA JUGADOR EN LA IMÁGEN */
+.parrafo_img{
+    background-color: var(--color_claro);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    color: var(--color_texto);
+    opacity: 0;
+}
+
+
+.parrafo_img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+
+/* -------------FOOTER------------- */
+
+footer{
+    height: 100px;
+    background-color: var(--color_claro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-family: var(--tipografia);
+    color: var(--color_texto);
+
+}
