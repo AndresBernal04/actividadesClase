@@ -1,0 +1,163 @@
+
+
+/* CONDICIONES INICIALES */
+:root{
+    --color_fondo: beige;
+    --color_claro: lightsalmon;
+    --color_contraste: rgb(52, 133, 125);
+    --tipografia: 'Arial Narrow', Arial,sans-serif;
+}
+
+
+
+/* CONDICIONAES INICIALES */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* INICIO BODY */
+body{
+    background-color: var(--color_fondo);
+    font-family: var(--tipografia);
+    font-size: 25px;
+    overflow-x: hidden;
+}
+
+
+/* --------------HEADER-------------- */
+
+header{
+    width: 100vw;
+    height: auto;
+}
+
+
+
+.titulo{
+    height: 150px;
+    width: 100%;
+    background-color: var(--color_contraste);
+    display: grid;
+    place-content: center;
+    color: var(--color_fondo)
+}
+
+
+/* CARRUSEL DE IMÁGENES */
+/* contenedor general -> es como un marco que me define lo que se ve y lo que no */
+.contenedor_slider{
+    border: 10PX solid var(--color_contraste);
+    width: 1000px;
+    height: 500px;
+
+    /* margin auto -> para centrar contenedores */
+    margin: 100px auto;
+
+    /* PARA MOSTRAR EL SCROLL EN X */
+    overflow-x: hidden;
+}
+
+
+/* Contenedor directo, lo específico cómo se debe mover */
+.slider{
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    /* nombre que se conecta con el keyframe */
+    animation-name: deslizar;
+    /* rotar, deslizar o escala */
+
+    /* tiempo de duración */
+    animation-duration: 7s;
+
+    /* cuántas veces queremos que se repita la animación */
+    animation-iteration-count: infinite;
+
+    /* en qué forma queremos que se de el movimiento */
+    animation-timing-function: linear; 
+
+    /* dirección de mi animación */
+    animation-direction: alternate-reverse ;
+}
+
+
+/* Vamos a poner a funcionar la animación */
+/* 0% -> 50% -> 100%
+    from -> to */
+
+@keyframes deslizar{
+    from{
+        transform: translateX(0%);
+        transform: scale(0.5);
+    }
+
+    50%{
+        transform: translateX(-150%) ;
+    }
+
+    to{
+        transform: translateX(-310%);
+        transform: scale(1.2);
+    }
+}
+
+/* deg -> para referirse a grados */
+
+/* @keyframes rotar {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */
+
+/* @keyframes escala {
+    from{
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1.5);
+    }
+} */
+
+
+
+/* LAS DIMENSIONES DE LAS IMÁGENES SE LES DEBEN DAR AL CONTENEDOR PADRE MÁS CERCANO */
+
+.contenedor_slider img{
+    /*  */
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/* ---------------MAIN--------------- */
+
+
+
+
+
+
+
+
+/* --------------FOOTER-------------- */
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: var(--color_contraste);
+
+    /* ALTERNATIVA PARA CENTRAR UN ELEMENTO */
+    display: grid;
+    /* CENTRA EN X y Y */
+    place-content: center;
+    color: var(--color_fondo);
+}
