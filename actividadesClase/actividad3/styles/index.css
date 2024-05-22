@@ -44,16 +44,36 @@ header{
     background-color: var(--color_contraste);
     display: grid;
     place-content: center;
-    color: var(--color_fondo)
+    color: var(--color_fondo);
+    transition: all 500ms ease-in-out;
 }
+
+
+
+.titulo:hover{
+    background-color: brown;
+    color: chartreuse;
+    transform: scale(1.2);
+}
+
+/* 
+Esta transformación se activa cuando se mantiene clickeado un lugar específico
+.titulo:active{
+    background-color: brown;
+    color: chartreuse;
+    transform: scale(1.2);
+} 
+*/
 
 
 /* CARRUSEL DE IMÁGENES */
 /* contenedor general -> es como un marco que me define lo que se ve y lo que no */
 .contenedor_slider{
     border: 10PX solid var(--color_contraste);
-    width: 1000px;
-    height: 500px;
+
+    /* Para responsive, no usar valores fijos como los px, sino valores relativos como los porcentajes o el vh y vw */
+    width: 75%;
+    height: 65vh;
 
     /* margin auto -> para centrar contenedores */
     margin: 100px auto;
@@ -91,7 +111,7 @@ header{
 /* 0% -> 50% -> 100%
     from -> to */
 
-@keyframes deslizar{
+/* @keyframes deslizar{
     from{
         transform: translateX(0%);
         transform: scale(0.5);
@@ -105,7 +125,22 @@ header{
         transform: translateX(-310%);
         transform: scale(1.2);
     }
+} */
+
+@keyframes deslizar{
+    from{
+        transform: translateX(0%);
+    }
+
+    50%{
+        transform: translateX(-150%) ;
+    }
+
+    to{
+        transform: translateX(-310%);
+    }
 }
+
 
 /* deg -> para referirse a grados */
 
@@ -142,6 +177,46 @@ header{
 
 /* ---------------MAIN--------------- */
 
+main{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+
+.contenido{
+    border: solid 5px var(--color_contraste);
+    width: 75%;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+
+.titulo_secundario{
+    text-align: center;
+    padding: 25px;
+}
+
+.img_parrafo{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 15px;
+}
+
+
+/* Puedo llamar varios elementos de mi HTML a los que les voy a aplicar los mismos estilos, sólo separándolos por , */
+.img_parrafo img{
+    width: 50%;
+}
+
+.img_parrafo p{
+    width: 50%;
+}
+
+
+
 
 
 
@@ -160,4 +235,42 @@ footer{
     /* CENTRA EN X y Y */
     place-content: center;
     color: var(--color_fondo);
+}
+
+
+/* DISEÑO RESPONSIVE: */
+/*  1. Trabajar en % (medidas no fijas) de una vez
+    2. MEDIA QUERIES:
+        Me permiten cambair la apariencia de los elementos en función del tamaño de mi pantalla
+        
+        - Dimesión mínima para PC -> 1200px en adelante
+        - Dimensión para tablet -> entre 500px y 1024px
+        - Dimensión de celular -> entre 320px y 490px 
+*/ 
+
+/* Estílos para mi celular */
+/* Estilos nuevos según los px que defina*/
+
+
+
+@media screen and (max-width: 490px){
+    
+    .titulo{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .img_parrafo{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img_parrafo img{
+        width: 100%;
+    }
+    
+    .img_parrafo p{
+        width: 100%;
+    }
+
 }
