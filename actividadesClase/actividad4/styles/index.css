@@ -1,0 +1,18 @@
+
+
+/* Mi carrusel */
+.mi_carrusel{
+    width: 100%;
+    height: 50vh;
+}
+
+.mi_carrusel img{
+    width: 100%;
+    height: 50vh;
+
+    /* Mejorar la vista de la imágen */ 
+    object-fit: cover;
+    
+    /* Posición de la imágen */
+    object-position: center;
+}

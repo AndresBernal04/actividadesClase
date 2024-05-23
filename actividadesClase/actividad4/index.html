@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link del FAVICON -->
+    <link rel="shortcut icon" href="./assets/logos/logo1.png" type="image/x-icon">
+
+    
+    <!-- Link a los estílos de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <!-- Link a los íconos de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <!-- Link de mis estílos: deben ir siempre después de los estilos de bootstrap-->
+    <link rel="stylesheet" href="./styles/index.css">
+
+
+    <title>E - COMMERCE</title>
+</head>
+
+
+<body>
+    
+
+    <!-- 
+        1. DOCUMENTACIÓN DE BOOTSTRAP -> Aprender a moverme con ella
+        2. Nosotros podemos darle nuestras clases -> en español para no confundir con las clases de Bootstrap
+
+            Clases de bootstrap manejadas hasta el momento
+                - bg = background
+                - text = texto
+                - btn = botón
+                - primary = azúl aprovado por goole
+                - secondary = gris
+                - danger = rojo
+                - warning = amarillo
+                - dark = negro
+                - ms-auto = nos envía los elementos a la derecha
+                - fs-4 = font size tamaño 4 (bootstrap tiene 6 tamaños)
+
+    -->
+   
+    
+    <!-- INICIO DEL HEADER -->
+    <header>
+
+
+        <!-- MENÚ DE NAVEGACIÓN -->
+        <nav class="navbar navbar-expand-lg bg-dark fs-5">
+            <div class="container mi_navbark ">
+              <a class="navbar-brand text-light" href="#">E - COMMERCE</a>
+              <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active text-light" aria-current="page" href="#">INICIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">PRODUCTOS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#"><i class="bi bi-bag-heart"></i></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+
+
+        <!-- Mi carrusel de imágenes -->
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner mi_carrusel">
+              <div class="carousel-item active">
+                <img src="./assets/slider/banner1.jpg" class="d-block w-100" alt="slider1">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/slider/banner2.jpg" class="d-block w-100" alt="slider2">
+              </div>
+              <div class="carousel-item">
+                <img src="./assets/slider/banner3.jpg" class="d-block w-100" alt="slider3">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </header>
+
+
+
+
+    <!-- INICIO DEL MAIN -->
+    <main>
+
+    </main>
+
+
+
+
+    <!-- INICIO DEL FOOTER -->
+    <footer>
+
+    </footer>
+
+
+    <!-- Link de la lógica de javascript de bootstrap debe ir antes del cierre de body -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
