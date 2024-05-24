@@ -26,6 +26,16 @@
 }
 
 .mis_logos div{
-    border: 5px solid red;
     text-align: center;
+}
+
+
+/* Productos */
+.mis_productos{
+    min-width: 300px;
+}
+
+.mis_productos img{
+    width: 250px;
+    height: 250px;
 }
