@@ -3,16 +3,29 @@
 /* Mi carrusel */
 .mi_carrusel{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
 }
 
 .mi_carrusel img{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
 
     /* Mejorar la vista de la imágen */ 
     object-fit: cover;
     
     /* Posición de la imágen */
     object-position: center;
+}
+
+
+/* Sección logos */
+
+.mis_logos img{
+    width: 100px;
+    height: 100px;
+}
+
+.mis_logos div{
+    border: 5px solid red;
+    text-align: center;
 }
