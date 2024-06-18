@@ -57,3 +57,97 @@ let arreglo_numeros = [1, 3, 5, 7, 9];
 const arreglo_nombres = ["Andrés", "Sofía", "María"];
 
 
+// POO -> programación orientada a objetos
+// Objeto -> son datos que representan en CÓDIGO, elementos o cosas de la vida real para que podamos darle instruncciones lógicas
+
+// Todos los elementos de la vida real los podemos definir en términos de características (atributos (código)), de acciones (métodos (código))
+
+/*
+    [] -> corchetes con los arreglos de datos
+    {} -> llaves los tipos de datos objeto 
+    () -> métodos -> funciones
+
+    estructura -> clave valor -> los atributos y métodos se separan por comas
+
+    Puedo acceder no sólo al objeto completo, sino a sus propiedades y a sus métodos, de forma específica
+
+    Cómo?:
+
+*/
+ 
+
+const persona1 = {
+    // clave: valor
+    // Atributos
+    nombre: "Andrés",
+    edad: 20,
+    altura: "180 cm",
+    nacionalidad: "Colombiano",
+    // Métodos -> funciones
+    saludar: function(){
+        console.log("Hola desarrolladores")
+    },
+    despedir: function(){
+        console.log("Hasta luego, desarrolladores")
+    }
+}
+
+let productos = {
+    nombre: "Computador",
+    precio: 10000,
+    cantidad: 20,
+    descripcion: "es muy rápido",
+
+    comprar: function(){
+        console.log("comprando producto")
+    }
+}
+
+
+// ============================ FUNCIONES ============================
+
+/*
+¿CÓMO SE USAN LAS FUNCIONES EN JS
+
+    1. Declaración típica de funciones
+    2. Funciones anónimas -> funciones sin nombre
+    3. Funciones flecha -> los estándares modernos de programación en js
+
+    4. Funciones incorporadas -> que ya vienen establecidas dentro de js, para que nosotros los podamos usar
+
+*/
+
+// 1. DECLARACIÓN BÁSICA DE FUNCIONES
+/*
+    function nombre_funcion(){
+        lógica dentro de la función
+    } 
+*/
+
+function saludar(){
+    console.log("Holiiiiiii");
+}
+
+
+// 2. FUNCIONES ANÓNIMAS
+let despedida = function(){
+    console.log("Chauuuuuuu")
+}
+
+
+// 3. FUNCIONES FLECHA -> Forma moderna
+let suma = () => {
+    console.log(5+4);
+}
+
+
+// 4. FUNCIONES INCORPORADAS
+    /*
+        alert -> enviar un mensaje al usuario
+        prompt -> pedir datos al usuario
+        parseInt -> convertir un dato a entero
+        parseFloat -> convertir dato a flotante (decimal)
+        console -> envía mensaje a la consola del desarrollador
+        Math -> nos permite hacer operaciones matemáticas más complejas
+    */
+

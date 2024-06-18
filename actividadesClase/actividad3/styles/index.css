@@ -218,12 +218,6 @@ main{
 
 
 
-
-
-
-
-
-
 /* --------------FOOTER-------------- */
 footer{
     height: 150px;
@@ -241,7 +235,7 @@ footer{
 /* DISEÑO RESPONSIVE: */
 /*  1. Trabajar en % (medidas no fijas) de una vez
     2. MEDIA QUERIES:
-        Me permiten cambair la apariencia de los elementos en función del tamaño de mi pantalla
+        Me permiten cambiar la apariencia de los elementos en función del tamaño de mi pantalla
         
         - Dimesión mínima para PC -> 1200px en adelante
         - Dimensión para tablet -> entre 500px y 1024px
